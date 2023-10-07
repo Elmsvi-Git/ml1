@@ -26,7 +26,16 @@ class CustomException(Exception):
     
     def __str__(self):#for printing the error
         return self.error_message
-    
 
+'''    
+#for Checking the logger file"
+if __name__=='__main__':
+    try:
+        a=1/0
+        logging.info("Logging has started succesfully")
+    except Exception as e:
+        logging.info("Logging has raised an error")
+        raise CustomException(e , sys)
 
+'''
         
