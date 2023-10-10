@@ -4,4 +4,6 @@ seaborn
 matplotlib
 catboost
 xgboost
-#-e .
+drill
+Flask
+#-e . #Only Whenever you want to install the package, you should uncomment this line , and run pip install -r requirements.txt

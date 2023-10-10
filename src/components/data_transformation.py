@@ -35,13 +35,13 @@ class DataTransformation:
         try:
         
             numerical_columns = ["writing_score", "reading_score"]
-            categorical_columns = []
-            #     "gender",
-            #     "race_ethnicity",
-            #     "parental_level_of_education",
-            #     "lunch",
-            #     "test_preparation_course",
-            # ]
+            categorical_columns =[
+                "gender",
+                "race_ethnicity",
+                "parental_level_of_education",
+                "lunch",
+                "test_preparation_course",
+            ]
             
             # num_features = X.select_dtypes(exclude="object").columns
             # cat_features = X.select_dtypes(include="object").columns
@@ -54,7 +54,7 @@ class DataTransformation:
             cateorical_pipeline = Pipeline(
                 steps = [('imputer', SimpleImputer(strategy= "most_frequent")),
                          ('one_hot_encoder' , OneHotEncoder()),
-                         ('scaler' , StandardScaler())]
+                         ('scaler' , StandardScaler(with_mean=False))]
     
                 )
     

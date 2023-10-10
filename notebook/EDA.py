@@ -49,7 +49,7 @@ warnings.filterwarnings('ignore')
 """
 
 # %%
-df = pd.read_csv('data/stud.csv')
+df = pd.read_csv('C:/Users/ElaheMsvi/Desktop/Projects/ML1/notebook/data/stud.csv')
 
 # %%
 """
