@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Oct  9 09:36:44 2023
+Created on Fri Oct 20 23:01:51 2023
 
 @author: ElaheMsvi
 """
@@ -47,7 +47,7 @@ def predict_datapoint():
     
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")        
+    app.run(host="0.0.0.0", debug=True)        
 
 
 
